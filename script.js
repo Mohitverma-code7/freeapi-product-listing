@@ -18,7 +18,7 @@ async function fetchProducts(page = 1) {
     error.innerText = "";
     productsGrid.innerHTML = "";
 
-    const res = await fetch(API_URL);
+    const res = await fetch(`${API_URL}?page=${page}&limit=${limit}`);
     const data = await res.json();
 
     const products = data?.data?.data || [];
