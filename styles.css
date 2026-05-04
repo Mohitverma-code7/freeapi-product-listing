@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f2f5;
+}
+
+/* =========================
+   TOPBAR (Y2K NAVBAR)
+========================= */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 14px;
+  background: linear-gradient(90deg, #f9a8d4, #f472b6, #c084fc);
+  border-bottom: 2px solid #000;
+
+  box-shadow: 0 4px 0 #000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 16px;
+  color: #111;
+
+  padding: 4px 8px;
+  border: 2px solid #000;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* NAV LINKS */
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #111;
+
+  padding: 4px 8px;
+  border: 2px solid #000;
+  background: #fff;
+  border-radius: 8px;
+
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  transform: translateY(-2px);
+  background: #ffe4f1;
+}
+
+/* RIGHT SIDE */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar-right input {
+  padding: 6px 8px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  outline: none;
+  font-size: 12px;
+}
+
+.topbar-right button {
+  padding: 6px 10px;
+  border: 2px solid #000;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.topbar-right button:hover {
+  background: #f9a8d4;
+  transform: scale(1.05);
+}
+
+/* META BAR */
+.meta {
+  text-align: center;
+  padding: 6px;
+  font-size: 12px;
+  background: #fff;
+  border-bottom: 2px solid #000;
+}
+
+/* =========================
+   GRID
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  padding: 20px;
+}
+
+/* WINDOW CARD */
+.window-card {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 #000;
+  overflow: hidden;
+}
+
+/* WINDOW HEADER */
+.window-header {
+  background: linear-gradient(90deg, #f9a8d4, #f472b6);
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #000;
+}
+
+.dots {
+  display: flex;
+  gap: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+
+.red { background: #ff5f57; }
+.yellow { background: #febc2e; }
+.green { background: #28c840; }
+
+.title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* BODY */
+.window-body {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  object-fit: cover;
+}
+
+.info h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.desc {
+  font-size: 11px;
+  color: #444;
+  height: 32px;
+  overflow: hidden;
+}
+
+.tags {
+  display: flex;
+  gap: 5px;
+  margin: 6px 0;
+}
+
+.tags span {
+  font-size: 10px;
+  border: 1px solid #000;
+  padding: 2px 6px;
+  background: #ffe4f1;
+  border-radius: 6px;
+}
+
+.price {
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* BUTTON */
+.add-to-cart {
+  width: 100%;
+  padding: 6px;
+  border: 2px solid #000;
+  background: #f9a8d4;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.add-to-cart:hover {
+  transform: scale(1.03);
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.page-btn {
+  padding: 6px 10px;
+  border: 2px solid #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+.page-btn.active {
+  background: #c084fc;
+}

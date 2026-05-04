@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Y2K Product UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- TOP NAVBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo">🛍️ Y2K Shop</div>
+    </div>
+
+    <div class="topbar-right">
+      <input id="searchInput" placeholder="Search products..." />
+      <button onclick="fetchProducts(1)">🔄</button>
+    </div>
+  </header>
+
+  <div class="meta">
+    <span id="infoText">Loading...</span>
+  </div>
+
+  <div id="loading">Loading products...</div>
+  <div id="error"></div>
+
+  <div id="productsGrid" class="grid"></div>
+
+  <div id="pagination" class="pagination"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
